@@ -1,5 +1,17 @@
 {% extends "fruit_cup/index.html" %}
 
 {% block content %}
+
+
 <p>this text should appear on the homepage!</p>
+
+
+<!--{{ all_buildings }}-->
+<ul>
+    {% for building in all_buildings %}
+    <li>{{ building.name }}</li>
+    {% endfor %}
+</ul>
+
+
 {% endblock %}
