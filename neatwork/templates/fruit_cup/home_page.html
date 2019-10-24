@@ -7,7 +7,8 @@
 <!--<div class="card-group">-->
     {% for building in all_buildings %}
       <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg" class="card-img-top" alt="...">
+        <img src="{{building.photo}}" class="card-img-top" alt="...">
+          <!--<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg" class="card-img-top" alt="...">-->
         <div class="card-body">
             <h5 class="card-title">{{ building.name }}</h5>
             <p class="card-text">I am determined to figure this shit out.</p>
