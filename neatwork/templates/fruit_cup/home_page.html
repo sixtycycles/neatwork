@@ -3,10 +3,21 @@
 {% block content %}
 <h1> Home Page</h1>
 <!--{{ all_buildings }}-->
-<ul>
-    {% for building in all_buildings %}
-    <li>{{ building.name }}</li>
-    {% endfor %}
-</ul>
 
+<!--<div class="card-group">-->
+    {% for building in all_buildings %}
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ building.name }}</h5>
+            <p class="card-text">I am determined to figure this shit out.</p>
+            <a href="#" class="btn btn-primary">#YOLO</a>
+        </div>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+
+    {% endfor %}
+<!--</div>-->
 {% endblock %}
